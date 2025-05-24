@@ -1,3 +1,5 @@
-echo "# Employee Access Management" >> README.md
-git add .
-git commit -m "Initial project setup"
+<<<<<<< HEAD
+(your local changes)
+=======
+(remote changes)
+>>>>>>> origin/main
