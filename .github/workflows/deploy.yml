@@ -1,4 +1,5 @@
-name: Terraform Deployment
+---
+name: Terraform Deployment  # Added proper document start
 
 on:
   push:
@@ -18,6 +19,9 @@ jobs:
 
       - name: Initialize Terraform
         run: terraform init
+
+      - name: Validate Terraform Configuration  # New validation step
+        run: terraform validate
 
       - name: Apply Terraform Changes
         run: terraform apply -auto-approve
